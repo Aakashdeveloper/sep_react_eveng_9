@@ -17,8 +17,8 @@ Depolyment
 Testing
 -> Docker
 -> Nginx
+-> heroku
 
-npm i enzyme-adapter-react-16  react-addons-test-utild react-test-renderer
 
 Mock API
 json-server
@@ -48,3 +48,54 @@ package.json
 > type npm init
 > answer all questions
 > type yes
+
+
+///////
+Step to intall packages
+///////
+> navigate to the folder using cmd
+> npm i react
+
+//////////////////////
+Step to generate react application
+////////////////////////
+//window
+>>>Only One Time in one system<<<
+> open cmd as admin
+> npm i -g create-react-app
+
+>>>>Net Every Time when i Need New App<<<<
+> go inside the the folder where you want to generate app
+> create-react-app applicationname
+
+//Mac
+>>>Only One Time in one system<<<
+> open terminal
+> sudo npm i -g create-react-app
+
+>>>>Net Every Time when i Need New App<<<<
+> go inside the the folder where you want to generate app
+> create-react-app applicationname
+
+
+http://localhost:3000/
+
+react > main lib for application
+react-dom > this help to render the app
+react-script > this help to run the application
+
+component based
+//////////////////
+Class Component
+> logical component
+> We call api and manage state
+> state can be defined
+> heavy as compare to functional
+
+Functional
+> Dumb Component
+> Use for display purpose
+> state cannot be defined
+> Light in weigth
+
+Hooks
