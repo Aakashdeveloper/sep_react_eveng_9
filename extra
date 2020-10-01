@@ -104,3 +104,26 @@ Hooks
 state
 props
 class
+
+State > Act like a local variable
+> scope is inside one component
+> Any data interaction will happen through state
+> state value can be updated
+
+Props > Props help to transfer data/state
+> value of props cannot be updated
+> we can use props in both clas and function component
+
+                 Props
+component A      ======>     Component B
+State="data"                 state=""
+
+
+Data can be pass from one component to another if it is nested 
+
+everytime state will update component will rerender
+
+
+map
+filter 
+indexof

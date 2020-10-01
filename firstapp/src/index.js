@@ -5,11 +5,13 @@ import Footer from './component/Footer';
 
 const App = () => {
     return(
-        <Fra/.gment>
+        <Fragment>
             <Header/>
             <h1>Hi To React</h1>
             <h2>Welcome Developer</h2>
-            <Footer/>
+            <img src=""/>
+            <a href=""/>
+            <Footer year={2021} month={'Oct'}/>
         </Fragment>
     )
 }
