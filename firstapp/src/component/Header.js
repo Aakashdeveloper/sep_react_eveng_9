@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import './Header.css';
 
 class Header extends Component{
     constructor(){
@@ -18,14 +19,15 @@ class Header extends Component{
     }
 
     render(){
-        console.log("i m in render")
         return(
             <React.Fragment>
-                <center>
-                    <h2>{this.state.title}</h2>
-                    <input onChange={this.handleChange} />
-                    <div>{this.state.keyword}</div>
-                </center>
+                <header>
+                    <div className="logo">{this.state.title}</div>
+                    <center>
+                        <input onChange={this.handleChange} />
+                        <div style={{color:"white"}}>{this.state.keyword}</div>
+                    </center>
+                </header>
                 <hr/>
             </React.Fragment>
         )
@@ -33,31 +35,3 @@ class Header extends Component{
 }
 
 export default Header;
-
-/*
-const Header = () => {
-    return(
-        <React.Fragment>
-            <center>
-                <h2>React App</h2>
-            </center>
-            <hr/>
-        </React.Fragment>
-    )
-}
-
-var React = require('react');
-
-function Header(){
-    return(
-        <header>
-            <center>
-                <h2>React App</h2>
-            </center>
-            <hr/>
-        </header>
-    )
-}
-
-module.exports = Header
-*/
