@@ -13,12 +13,11 @@ React-JWT(Login Logut)-1
 React-Saga -1
 Depolyment
 -> MERN
-
-Testing
 -> Docker
 -> Nginx
 -> heroku
 
+Testing
 
 Mock API
 json-server
@@ -127,3 +126,28 @@ everytime state will update component will rerender
 map
 filter 
 indexof
+
+parent => child (props) 
+child => parent( props with function)
+
+
+function add(a,b){
+    return a+b
+}
+
+
+add(1,2)
+
+Routing
+>>>>
+npm i react-router-dom
+
+import {BrowserRouter, Route, Link} from 'react-router-dom'
+
+https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+
+grid Basic
+panel
+navbar 
+jumbotron
+button
