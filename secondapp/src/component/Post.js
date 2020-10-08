@@ -1,9 +1,26 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Post = () => {
     return(
-        <div>
-            <h1>Post Page</h1>
+        <div className="panel panel-success">
+            <div className="panel-heading">
+                Post Page
+            </div>
+            <div className="panel-body">
+               <div>
+                   <h4>JavaScript</h4>
+                   <Link to="/post/JavaScript">Details</Link>
+               </div>
+               <div>
+                   <h4>React</h4>
+                   <Link to="/post/React">Details</Link>
+               </div>
+               <div>
+                   <h4>Node</h4>
+                   <Link to="/post/Node">Details</Link>
+               </div>
+            </div>
         </div>
     )
 }
