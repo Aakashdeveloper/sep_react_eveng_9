@@ -3,7 +3,7 @@
     margin-top:50px
 }
 
-.quickSearchHeding{
+.quickSearchHeading{
     text-align: left;
     color: #192f60;
     font-size:30px;
@@ -12,7 +12,7 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.quickSearchSubHeding{
+.quickSearchSubHeading{
     text-align: left;
     color: gray;
     line-height: .01;
