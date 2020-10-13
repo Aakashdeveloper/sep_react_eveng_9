@@ -1,5 +1,8 @@
 import React,{Component} from 'react';
 import axios from 'axios';
+import ListingDisplay from './ListingDisplay';
+import RoomFilter from '../filters/roomFilter';
+import CostFilter from '../filters/costFilter';
 
 const url = "https://developerfunnel.herokuapp.com/hotellist";
 
@@ -8,7 +11,7 @@ class Listing extends Component{
         super()
 
         this.state={
-            hotellist:''
+            hoteldata:''
         }
     }
 
@@ -16,10 +19,11 @@ class Listing extends Component{
         return(
             <div className="row">
                 <div className="col-md-2">
-                    Filter Here
+                   <RoomFilter/>
+                   <CostFilter/>
                 </div>
                 <div className="col-md-10">
-                   Content Here
+                  <ListingDisplay hotellist={this.state.hoteldata}/>
                 </div>
             </div>
         )
@@ -28,7 +32,7 @@ class Listing extends Component{
     componentDidMount(){
         var tripid = this.props.match.params.id;
         axios.get(`${url}/${tripid}`)
-        .then((response) => {this.setState({hotellist:response.data})})
+        .then((response) => {this.setState({hoteldata:response.data})})
     }
 }
 
