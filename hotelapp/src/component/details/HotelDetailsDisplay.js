@@ -45,7 +45,7 @@ const HotelDisplay = (props) => {
                                 </TabPanel>
                             </Tabs>
                         </div>
-                        <Link to="/" className="btn btn-success">Book Hotel</Link>
+                        <Link to={`/booking/${props.hoteldata._id}`} className="btn btn-success">Book Hotel</Link>
                     </div>
                 </div>
             </div>

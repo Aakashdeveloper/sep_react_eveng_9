@@ -1,12 +1,29 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 
+const url = "https://developerfunnel.herokuapp.com/hotellist"
+
 class CostFilter extends Component {
+    costfilter = (event) => {
+        let costtype= (event.target.value).split(',');
+        let lcost = Number(costtype[0]);
+        let hcost = Number(costtype[1]);
+        let Tripid = sessionStorage.getItem('tripid');
+        let curl;
+        if(costtype==""){
+            curl=`${url}/${Tripid}`
+        }else{
+            curl=`${url}/${Tripid}?hcost=${hcost}&lcost=${lcost}`
+        }
+
+        axios.get(curl)
+        .then((response) => {this.props.costPerType(response.data)})
+    }
     render(){
         return(
             <React.Fragment>
                 <center>Cost Type</center>
-                <div>
+                <div onChange={this.costfilter}>
                     <label className="radio">
                         <input type="radio" value="" name="cost"/>All
                     </label>
