@@ -82,7 +82,7 @@ class PlaceOrder extends Component {
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <Link to='/' className="btn btn-danger">
+                        <Link to={`/details/${this.props.match.params.id}`} className="btn btn-danger">
                             Back
                         </Link> &nbsp;
                         <button className="btn btn-success" onClick={this.handleSubmit}>

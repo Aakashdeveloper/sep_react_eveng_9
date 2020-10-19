@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {withRouter} from 'react-router-dom';
 import './Search.css';
 
 const lurl = "https://developerfunnel.herokuapp.com/location";
@@ -47,7 +48,12 @@ class Search extends Component {
         })
     }
 
+    handleHotel = (event) => {
+        this.props.history.push(`/details/${event.target.value}`)
+    }
+
     render(){
+        console.log("props in search",this.props)
         console.log("state>>>",this.state.location)
         return(
            <div className="imageContainer">
@@ -62,7 +68,7 @@ class Search extends Component {
                         <option>----SELECT CITY-----</option>
                         {this.renderCity(this.state.location)}
                     </select>
-                    <select className="reataurantsinput">
+                    <select className="reataurantsinput" onChange={this.handleHotel}>
                         <option>----SELECT HOTEL-----</option>
                         {this.renderHotel(this.state.hotels)}
                     </select>
@@ -80,4 +86,4 @@ class Search extends Component {
     
 }
 
-export default Search
+export default withRouter(Search);

@@ -13,7 +13,7 @@ const HotelDisplay = (props) => {
                             <h3>{props.hoteldata.name}</h3>
                         </div>
                         <div className="col-md-1">
-                            <Link to="/" className="btn btn-danger">Back</Link>
+                            <Link to={`/list/${sessionStorage.getItem('tripid')}`} className="btn btn-danger">Back</Link>
                         </div>
                     </div>
                 </div>
