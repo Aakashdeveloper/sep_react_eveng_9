@@ -11,18 +11,15 @@ const Header = () => {
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                 </button>
-                <a className="navbar-brand" href="#">WebSiteName</a>
+                <a className="navbar-brand" href="#">Login App</a>
                 </div>
                 <div className="collapse navbar-collapse" id="myNavbar">
                 <ul className="nav navbar-nav">
-                    <li className="active"><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+                    <li><Link to="/list">User</Link></li>
                 </ul>
                 <ul className="nav navbar-nav navbar-right">
-                    <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><Link to="/"><span className="glyphicon glyphicon-user"></span> Register</Link></li>
+                    <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
                 </ul>
                 </div>
             </div>
