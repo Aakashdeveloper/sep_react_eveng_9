@@ -7,24 +7,21 @@ Npm
 React = 3
 React-JWT(Login Logut)-1
 React_hooks -1
-
-Basic React Native=1
-React-Redux =2
-React-GarphQL 1
-
-React-Saga -1
+React-GarphQL-1
+Mock API
+json-server
 Depolyment
 -> MERN
 -> Docker
 -> Nginx
 -> heroku
-
+////////////
+Basic React Native=1
+Github
+React-Redux =2
+React-Saga -1
 Testing
 
-Mock API
-json-server
-
-Github
 
 --------NOT--------------
 API
@@ -187,3 +184,32 @@ npm i axios react-router-dom react-tabs
 (GET) => http://localhost:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
 (response) => {userinfo}
+
+useState
+useEffect
+
+https://www.youtube.com/watch?v=IAq5OO3U-9I&t=209s
+https://www.youtube.com/watch?v=k4KZblj3QA0&t=31s
+
+//////
+React Native
+///////
+npm i -g create-react-native-app
+create-react-native-app appname
+
+cd appname
+npm run web
+
+////
+for dummy api
+////
+npm i -g json-server
+json-server --watch db.json --port 8900
+
+
+npm i apollo-boost apollo-graphql graphql react-apollo
+
+///////////
+For Production
+//////
+npm run build
