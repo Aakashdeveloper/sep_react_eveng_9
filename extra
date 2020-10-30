@@ -5,7 +5,7 @@ https://github.com/
 Basic JavaScript
 Npm
 React = 3
-React-JWT(Login Logut)-1
+React-JWT(Login Logout)-1
 React_hooks -1
 React-GarphQL-1
 Mock API
@@ -227,3 +227,12 @@ git push
 
 
 git clone https://github.com/Aakashdeveloper/react9.git
+
+////////////////
+state managment
+application design
+code resuability
+pass data between non nested component 
+
+
+npm i redux react-redux redux-logger prop-types
