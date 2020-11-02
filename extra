@@ -235,4 +235,5 @@ code resuability
 pass data between non nested component 
 
 
-npm i redux react-redux redux-logger prop-types
+npm i redux react-redux redux-logger prop-types react-slick redux-promise enzyme enzyme-adapter-react-16 react-addons-test-utils react-router-dom react-test-renderer
+
