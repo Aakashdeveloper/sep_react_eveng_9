@@ -17,7 +17,6 @@ Depolyment
 -> heroku
 Basic React Native=1
 Github
-////////////
 React-Redux =2
 React-Saga -1
 Testing
